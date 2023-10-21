@@ -21,3 +21,65 @@ height: 50px;
     min-width: 75px;
     text-align: center;
 }
+
+.nav-item:hover {
+    background: lightgray;
+}
+
+.greetings {
+    padding: 2cm 0cm 0cm 3cm;
+}
+
+.banner {
+    border-bottom : 1px solid black;
+    background-image: url('../assets/gunung-prau.jpg');
+    height: 500px;
+    background-position: 0 -130px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headquarters{
+    padding: 2cm ;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin-top: 1cm;
+}
+.hq-item{
+
+    padding:20px 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.circle{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+table td{
+    padding:2px 5px;
+
+}
+
+.input {
+    width: 100%;
+}
+
+.form{
+    display: flex;
+    padding:  40px;
+    justify-content: space-around;
+    border-bottom: 1px solid black ;
+}
+
+.form-right{
+    border: 1px solid black;
+    padding: 20px 150px 20px 10px;
+}
+
+.footer{
+    text-align: end;
+}
