@@ -1,3 +1,7 @@
+body{
+    background-color: ;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -57,7 +61,13 @@ height: 50px;
     width: 150px;
     border: 1px solid black;
     border-radius: 50%;
-}
+    }
+
+.circle p {
+    display: block;
+    margin-top: 150px;
+    text-align: center;
+}    
 
 table td{
     padding:2px 5px;

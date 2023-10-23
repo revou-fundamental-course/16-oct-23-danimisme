@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
+
     <title>Tugas</title>
 </head>
 <body>
@@ -27,52 +28,58 @@
     <section class="headquarters">
         <h1>Our headquarters</h1>
         <div class="hq-item">
-        <div class="circle"> </div>
-        <div class="circle"> </div>
-        <div class="circle"> </div>
+        <div class="circle"> <p>Jakarta</p></div>
+        <div class="circle"> <p>Bandung</p> </div>
+        <div class="circle"> <p>Surabaya</p> </div>
         </div>
     </section>
     <section class="form">
+
         <div class="form-left">
             <h1><b>Message Us</b></h1>
-            <form action="">
+            <form name="message-form" onsubmit="return validateForm()">
                 <table>
                     <tr>
                         <td>Nama</td>
                         <td>:</td>
-                        <td><input class="input" ="text" placeholder="Nama"></td>
+                        <td><input class="input" ="text" placeholder="Nama" name="full-name"></td>
                     </tr>
                     <tr>
                         <td>Tanggal Lahir</td>
                         <td>:</td>
-                        <td><input class="input" ="date" ></td>
+                        <td><input class="input" type="date" name="birth-date"></td>
                     </tr>
                     <tr>
                         <td>Jenis Kelamin</td>
                         <td>:</td>
-                        <td><input type="radio" name="jenis-kelamin" checked="checked" value="Laki-laki">Laki-laki <input type="radio" name="jenis-kelamin" value="Perempuan">Perempuan</td>
+                        <td><input type="radio" id="male" name="gender" checked="checked" value="male">
+                            <label for="male">Laki-laki</label> 
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Perempuan</label>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Pesan</td>
-                        <td>:</td>
-                        <td><input class="input" type="text" placeholder="Pesan"></td>
+                        <td >Pesan</td>
+                        <td >:</td>
+                        <td ><textarea class="input" name="messages" placeholder="Pesan" cols="30" rows="5"></textarea> </td>
                     </tr>
                     <tr>
-                        <td colspan="3"><input class="input" type="submit" name="submit" id=""></td>
+                        <td colspan="3"><input type="submit" class="input" id="submit" value="Submit" ></input></td>
                     </tr>
                 </table>
             </form>
         </div>
         <div class="form-right">
-            <p><b>Current time</b></p>
-            <b>Nama :</b> Muhammad Subhan Ramdhani <br>
-            <b>Tanggal Lahir </b>: 24/12/1998 <br>
-            <b>Jenis Keliamin </b>: Laki-laki <br>
-            <b>Pesan </b>: Lagi belajar membuat website</p>
+            <p><b>Current time</b> <span id="time"></span></p>
+            <b>Nama </b> : <span id="sender-full-name"></span> <br>
+            <b>Tanggal Lahir </b>: <span id="sender-birth-date"></span> <br>
+            <b>Jenis Keliamin </b>: <span id="sender-gender"></span> <br>
+            <b>Pesan </b>: <span id="sender-messages"></span></p>
         </div>
     </section>
     <footer class="footer">
             <p class="footer ">made by Muhammad Subhan Ramdhani</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
